@@ -1,0 +1,194 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[letterpaper,margin=0.9in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\definecolor{TauNavy}{HTML}{17324D}
+\definecolor{TauTeal}{HTML}{1B7F79}
+\definecolor{TauBlue}{HTML}{2F6F9F}
+\definecolor{TauGray}{HTML}{F4F6F8}
+\definecolor{TauRule}{HTML}{D7DEE6}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=TauBlue,
+  urlcolor=TauTeal,
+  citecolor=TauBlue,
+  pdfauthor={Ritvik Thon},
+  pdftitle={TAU Profile}
+}
+
+\titleformat{\section}
+  {\Large\bfseries\color{TauNavy}}
+  {}
+  {0pt}
+  {}
+  [\vspace{0.25em}{\titlerule[0.7pt]}]
+
+\titleformat{\subsection}
+  {\large\bfseries\color{TauNavy}}
+  {}
+  {0pt}
+  {}
+
+\titlespacing*{\section}{0pt}{1.2em}{0.7em}
+\titlespacing*{\subsection}{0pt}{1em}{0.45em}
+
+\setlist[itemize]{leftmargin=1.2em,itemsep=0.25em,topsep=0.25em}
+\setlist[enumerate]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\tcbset{
+  enhanced,
+  sharp corners,
+  boxrule=0.6pt,
+  colback=TauGray,
+  colframe=TauRule,
+  left=10pt,
+  right=10pt,
+  top=8pt,
+  bottom=8pt,
+  before skip=0.8em,
+  after skip=0.8em
+}
+
+\newtcolorbox{insightbox}[1]{
+  colback=TauGray,
+  colframe=TauTeal,
+  title=#1,
+  fonttitle=\bfseries\color{white},
+  coltitle=white,
+  colbacktitle=TauTeal,
+  attach boxed title to top left={xshift=0pt,yshift=-0.5mm},
+  boxed title style={sharp corners,boxrule=0pt}
+}
+
+\newtcolorbox{standardbox}[1]{
+  colback=white,
+  colframe=TauRule,
+  title=#1,
+  fonttitle=\bfseries\color{TauNavy},
+  coltitle=TauNavy,
+  colbacktitle=TauGray
+}
+
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{1.1in}
+  {\Huge\bfseries\color{TauNavy} TAU Profile\par}
+  \vspace{0.35in}
+  {\Large A decentralized skill identity built for computer science engineers.\par}
+  \vfill
+\end{titlepage}
+
+\section{What is TAU Profile}
+
+TAU Profile is a decentralized skill identity for computer science and AI engineers as part of a global talent network. This identity earns proven technical ability. It creates a trusted record of an engineer's competence and skills through standardized role assessments. Each engineer will own a TAU Profile, allowing engineers to carry their verified evidence with them, and for companies to more accurately select their candidates with the provided standard.
+
+\begin{insightbox}{The Identity Enables}
+The identity enables the opportunities they can access, who they are within the tech industry, and interoperability with established standards.
+\end{insightbox}
+
+TAU Profile aims to transform technical skills into trusted proof, creating a global standard for engineering capability in its purest form by building, rather than relying on bias or assumptions. Companies have a set idea of what they expect within the given schema of standards. We classify this as a global talent network working both ways for credible engineers with proven capabilities and companies looking for tech talent.
+
+\section{Why TAU Profile}
+
+Technical hiring continues to rely on fragmented data that does not provide reliable indicators.
+
+Organizations are struggling to understand whether a candidate genuinely possesses the skills for a given role, while engineers who are capable often struggle to stand out or communicate their technical abilities as a whole beyond traditional credentials which have their own constraints.
+
+\section{How TAU Profile Works}
+
+\begin{longtable}{@{}L{0.08\textwidth}L{0.26\textwidth}L{0.56\textwidth}@{}}
+\toprule
+\textbf{Step} & \textbf{Stage} & \textbf{Description} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Step} & \textbf{Stage} & \textbf{Description} \\
+\midrule
+\endhead
+1 & Role Selection & Candidate selects a predefined engineering role aligned with the industry. \\
+2 & Assessment Completion & Candidate completes the role-specific assessment. \\
+3 & Score Generation & Performance is evaluated using predefined scoring criteria. \\
+4 & TAU Profile Creation & Assessment results are transformed into verified tags on TAU Profile. \\
+5 & Blockchain Verification & Credential proofs are anchored on-chain to establish authenticity and ownership to create eligibility systematically. \\
+6 & Companies Discovery & Companies discover candidates through their TAU Profiles. \\
+\bottomrule
+\end{longtable}
+
+\subsection{Assessment Components}
+
+Each assessment consists of four components:
+
+\begin{standardbox}{Assessment Structure}
+\begin{tabularx}{\textwidth}{@{}L{0.38\textwidth}Y@{}}
+\toprule
+\textbf{Component} & \textbf{Role in the assessment} \\
+\midrule
+Questions & Included as part of the assessment structure. \\
+Multiple Choice Questions (MCQs) & Included as part of the assessment structure. \\
+Coding Assessment & Included as part of the assessment structure. \\
+Video Introduction & Included as part of the assessment structure. \\
+Interview Round if initiated by company & Included as part of the assessment structure when initiated by company. \\
+\bottomrule
+\end{tabularx}
+\end{standardbox}
+
+Each component contributes a predefined weighting toward the final assessment score. Blockchain tech will be used for validity and authenticity of the TAU Profile. AI will assess the work given by the candidate and grade it with human oversight.
+
+\section{Roadmap}
+
+TAU Profile will start as an identity for engineers, helping them get validated through the systems we have built through the assessments.
+
+Onboarding companies who are looking to meet particular needs and map both stakeholders.
+
+Set a standard across all stakeholders.
+
+Within this schema create a global talent network accessible from anywhere.
+
+Look into the token feasibility.
+
+\section{KPIs}
+
+\begin{standardbox}{Key Performance Indicators}
+\begin{tabularx}{\textwidth}{@{}L{0.08\textwidth}Y@{}}
+\toprule
+\textbf{No.} & \textbf{KPI} \\
+\midrule
+1 & TAU Profiles created \\
+2 & Assessments completed \\
+3 & Verified skills issued \\
+4 & Assessment accuracy \\
+5 & Role readiness \\
+6 & Candidate performance \\
+7 & Blockchain credentials \\
+8 & Verification requests \\
+9 & Companies onboarded \\
+10 & Profiles viewed \\
+11 & Number of available engineering roles \\
+12 & Verification success rate \\
+13 & Fraud detection \\
+14 & Repeated use of TAU Profile across various organizations \\
+\bottomrule
+\end{tabularx}
+\end{standardbox}
+
+\end{document}
